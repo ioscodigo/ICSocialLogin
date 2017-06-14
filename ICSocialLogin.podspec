@@ -15,22 +15,22 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Facebook' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
+    subspec.dependency 'ICSocialLogin/Core'
     subspec.dependency 'FacebookCore', '~> 0.2.0'
     subspec.dependency 'FacebookLogin', '~> 0.2.0'
-    subspec.source_files = 'ImageSlideshow/Core/ExternalLoginFacebook.swift'
+    subspec.source_files = 'ICSocialLogin/Core/ExternalLoginFacebook.swift'
   end
 
   s.subspec 'Twitter' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
+    subspec.dependency 'ICSocialLogin/Core'
     subspec.dependency 'FacebookCore', '~> 0.2.0'
     subspec.dependency 'FacebookLogin', '~> 0.2.0'
-    subspec.source_files = 'ImageSlideshow/Core/ExternalLoginTwitter.swift'
+    subspec.source_files = 'ICSocialLogin/Core/ExternalLoginTwitter.swift'
   end
 
   s.subspec 'Socialite' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
-    subspec.source_files = 'ImageSlideshow/Core/ExternalLogin.swift'
+    subspec.dependency 'ICSocialLogin/Core'
+    subspec.source_files = 'ICSocialLogin/Core/ExternalLogin.swift'
   end
 
   s.default_subspec = 'Core'
